@@ -66,6 +66,11 @@ class TodosListCtrl {
         Meteor.call('tasks.setPrivate', task._id, !task.private);
     }
 
+    onInputTask(event) {
+        console.log(event);
+        console.log(this.tasks);
+    }
+
 
 }
 

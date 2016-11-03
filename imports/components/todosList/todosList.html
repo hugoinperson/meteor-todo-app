@@ -6,7 +6,7 @@
     </label>
     <login-buttons></login-buttons>
     <form class="new-task" ng-submit="$ctrl.addTask($ctrl.newTask)" ng-show="$ctrl.currentUser">
-        <input ng-model="$ctrl.newTask" type="text" name="text" placeholder="Type to add new tasks"/>
+        <input ng-model="$ctrl.newTask" type="text" name="text" ng-keyup="$ctrl.onInputTask($event)" placeholder="Type to add new tasks"/>
     </form>
 </header>
 
